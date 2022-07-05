@@ -1,0 +1,1 @@
+//Configurações gerais do projeto(reactotron, react dev tools, babel)
