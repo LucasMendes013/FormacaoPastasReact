@@ -1,0 +1,1 @@
+//Adicionar funções reutilizáveis
