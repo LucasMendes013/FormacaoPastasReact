@@ -2,10 +2,12 @@
 
 import styles from './Header.module.css'
 
+import fogueteLogo from '../../assets/assetsHome/ignite-logo.png'
+
 export function Header() {
   return (
     <header className={styles.headerContainer}>
-    <strong>Ignite Feed</strong>
+      <img src={fogueteLogo} alt="Logotipo do Ignite"></img>
     </header>
   )
 }

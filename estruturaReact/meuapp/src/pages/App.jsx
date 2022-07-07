@@ -5,24 +5,33 @@ import React from 'react'
 import { Header } from '../components/Header/Header'
 
 import { Post } from './Perguntas/Post'
+
+import styles from '../pages/App.module.css'
+
 import '../global.css'
-// import Style from './perguntas/style'
+import { Sidebar } from '../components/Main/SideBar'
 
 
 
-const App = () => {
+
+export function App() {
   return (
     <div>
-      <Header />
-      <Post  
-      author="Lucas Mendes" 
-      content="Loren askoaksoaoks aoksoaskaosaao aoksask"/>
-      <Post 
-      author2="Gabriela Souza"
-      content="Uma nova programadora"
-      src="www.google.com"
-      title="Sou o titulo"/>
+        <Header></Header>
+          <div className={styles.wrapper}>
+            <Sidebar>
+              
+            </Sidebar>
 
+              <main>
+                <Post 
+                  author="Lucas Mendes"
+                  content="Novo programador"/>
+                <Post 
+                  author="Gabriela Souza"
+                  content="Nova programadora"/>
+              </main>
+          </div>
     </div>
   )
 }
