@@ -2,7 +2,10 @@
 //JSX = Javascript  + XML (HTML)
 
 import React from 'react'
-import { Perguntas } from './Perguntas/Perguntas'
+import { Header } from '../components/Header/Header'
+
+import { Post } from './Perguntas/Post'
+import '../global.css'
 // import Style from './perguntas/style'
 
 
@@ -10,8 +13,16 @@ import { Perguntas } from './Perguntas/Perguntas'
 const App = () => {
   return (
     <div>
-      <Perguntas />
-      {/* <Style /> */}
+      <Header />
+      <Post  
+      author="Lucas Mendes" 
+      content="Loren askoaksoaoks aoksoaskaosaao aoksask"/>
+      <Post 
+      author2="Gabriela Souza"
+      content="Uma nova programadora"
+      src="www.google.com"
+      title="Sou o titulo"/>
+
     </div>
   )
 }
