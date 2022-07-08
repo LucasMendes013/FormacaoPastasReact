@@ -10,6 +10,8 @@ export function Sidebar() {
           title="Capa do Perfil"></img>
 
         <div className={styles.profile}>
+          <img className={styles.avatar} src="https://avatars.githubusercontent.com/u/104436533?v=4" alt="Imagem de Perfil"></img>
+
           <strong>Vanessa Vanessets</strong>
           <span>Web Developer</span>
         </div>
