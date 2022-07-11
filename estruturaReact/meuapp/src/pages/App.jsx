@@ -4,7 +4,7 @@
 import React from 'react'
 import { Header } from '../components/Header/Header'
 
-import { Post } from './Perguntas/Post'
+import { Post } from '../components/Main/Post'
 
 import styles from '../pages/App.module.css'
 
@@ -24,12 +24,7 @@ export function App() {
             </Sidebar>
 
               <main>
-                <Post 
-                  author="Lucas Mendes"
-                  content="Novo programador"/>
-                <Post 
-                  author="Gabriela Souza"
-                  content="Nova programadora"/>
+                <Post />
               </main>
           </div>
     </div>
